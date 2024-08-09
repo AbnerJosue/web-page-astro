@@ -1,20 +1,9 @@
 ---
-const title = 'Astro';
+	import Layout from '../components/Layout/index.astro'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title> Astro </title>
-	</head>
-	<body>
-		<script>console.log({'hola': 'hola mundo'})</script>
-		<h1> { title } </h1>
 
-		<p> Welcome to Astro! </p>
-
-
-	</body>
-</html>
+<Layout>
+	<h1> Pagina Inicial </h1>
+	<p> Bienvenido a Astro</p>
+</Layout>

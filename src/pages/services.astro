@@ -1,0 +1,22 @@
+---
+ 
+import Card from '../components/Card/index.astro';
+import Layout from '../components/Layout/index.astro';
+
+const comments = await fetch('https://jsonplaceholder.typicode.com/comments')
+const data = await comments.json();
+
+
+---
+
+<Layout> 
+
+    
+    <h1> Mis servicios </h1>
+    {
+        data?.map((comment) => (
+            <Card title={comment.name} content={comment.body} />
+        ))
+    }
+
+</Layout>

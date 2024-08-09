@@ -1,8 +1,6 @@
 ---
-
     import Layout from '../../components/Layout/index.astro';
     const post = await Astro.glob('./post/*.md')
-
 ---
 
 <Layout pageTitle='Mis publicaciones' pageDescription='Es una pagina para paginas web'> 
@@ -12,6 +10,9 @@
             <a class="link" href={post.url}>{post.frontmatter.title}</a>
         ))
     }
+    
+    <img width="300px" src="https://images.pexels.com/photos/27439406/pexels-photo-27439406/free-photo-of-amanecer-relajacion-hotel-cama.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"> 
+    <img width="300px" src="/public/free-photo-of-amanecer-relajacion-hotel-cama.jpeg"> 
 
     <style>
         .link {

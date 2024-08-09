@@ -1,6 +1,6 @@
 ---
- layout: ../../components/Layout/index.astro
-
+ layout: ../../../components/Layout/index.astro
+ title: Mi primera publicacion
 ---
 
 # Mi primera publicacion 
